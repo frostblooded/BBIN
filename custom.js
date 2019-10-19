@@ -1,25 +1,47 @@
-var myChart;
+var data = {
+    bus: {
+        euro6: {
+            display: "Euro 6",
+            value: 142
+        },
+        euro6a: {
+            display: "Euro 6a",
+            value: 71
+        },
+        euro6b: {
+            display: "Euro 6b",
+            value: 68
+        },
+        euro6c: {
+            display: "Euro 6c",
+            value: 73
+        },
+        euro5: {
+            display: "Euro 5",
+            value: 1
+        },
+        euro5b: {
+            display: "Euro 5b",
+            value: 6
+        },
+    }
+};
 
 $(document).ready(function() {
-    var ctx = document.getElementById('chart').getContext('2d');
-    var fileData = {
-            bus: {
-                euro6: 142,
-                euro6a: 71,
-                euro6b: 68,
-                euro6c: 73,
-                euro5: 1,
-                euro5b: 6,
-//                obshto: 361
-            }
-    };
-    myChart = new Chart(ctx, {
-        type: 'pie',
-        data: {
-            labels: Object.keys(fileData.bus),
+    $.each(data, function(i, el){
+        var chartId = `chart_${i}`;``
+        var $canvas = $(`<canvas id=${chartId}></canvas>`);
+        $('body').append($canvas);
+        var ctx = $canvas[0].getContext('2d');
+        
+        var labels = $.map(el, function(el, i) { return el.display });
+        var values = $.map(el, function(el, i) { return el.value });
+        
+        var chartData = {
+            labels: labels,
             datasets: [{
                 label: '# of Votes',
-                data: Object.values(fileData.bus),
+                data: values,
                 backgroundColor: [
                     'rgba(255, 99, 132, 0.2)',
                     'rgba(54, 162, 235, 0.2)',
@@ -38,8 +60,9 @@ $(document).ready(function() {
                 ],
                 borderWidth: 1
             }]
-        },
-        options: {
+        };
+
+        var chartOptions = {
             scales: {
                 yAxes: [{
                     ticks: {
@@ -47,6 +70,12 @@ $(document).ready(function() {
                     }
                 }]
             }
-        }
+        };
+
+        var myChart = new Chart(ctx, {
+            type: 'pie',
+            data: chartData,
+            options: chartOptions
+        });
     });
 });
