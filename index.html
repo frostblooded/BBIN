@@ -1,12 +1,23 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link type="text/css" href="Chart.css">
-<!--        <script src="jquery-3.4.1.min.js"></script>-->
+        <link rel="stylesheet" href="custom.css">
+        <link rel="stylesheet" href="vendor/Chart.css">
         <script src="vendor/jquery-3.4.1.min.js"/></script>
         <script src="vendor/Chart.bundle.js"></script>
         <script src="custom.js"></script>
     </head>
     <body>
+      <div class="container">
+        <div id="city-selectors">
+          <input type="button" class="city-select" name="sofia" value="Sofiq"></input>
+          <input type="button" class="city-select" name="plovdiv" value="Plovdiv"></input>
+          <input type="button" class="city-select" name="vidin" value="Vidin"></input>
+        </div>
+        <div id="year-selectors">
+          <input type="button" class="year-select" name="2018" value="2018"></input>
+          <input type="button" class="year-select" name="2019" value="2019"></input>
+        </div>
+      </div>
     </body>
 </html>
