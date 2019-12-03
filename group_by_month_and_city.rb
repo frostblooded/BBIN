@@ -7,7 +7,6 @@ end
 
 csv = CSV.read('data/airtube_locality_data_2019.csv')
 # csv = CSV.read('data/airtube_test.csv')
-result = {}
 by_city_by_date = {}
 
 csv.each do |row|
