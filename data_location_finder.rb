@@ -1,19 +1,21 @@
 require 'csv'
 require 'json'
 
-HASHES = {
+LOCATION_HASHES = {
   sofia: %w(sx8e sx8d),
   plovdiv: %w(sx3x),
   vidin: %w(sxb4r sxb62 sxb4p sxb60)
 }
 
-FILES_TO_PROCESS = {
-  'data/airtube-data-BG-2018.csv' => 'processed_data/airtube_data_by_month_2018.csv',
-  'data/airtube-data-BG-2019.csv' => 'processed_data/airtube_data_by_month_2019.csv',
-}
+FILES_TO_PROCESS = [
+  { input_file: 'data/airtube-data-BG-2018.csv', year: "2018" },
+  { input_file: 'data/airtube-data-BG-2019.csv', year: "2019" }
+]
+
+OUTPUT_FILE = 'processed_data/airtube_data.json'
 
 def get_city hash
-  HASHES.each do |city, hashes|
+  LOCATION_HASHES.each do |city, hashes|
     hashes.each do |hash_start|
       if hash.start_with? hash_start
         return city
@@ -37,7 +39,7 @@ def median array
   (sorted[(len - 1) / 2] + sorted[len / 2]) / 2.0
 end
 
-def process_data input_file, output_file
+def process_data input_file
   puts "Start processing data from #{input_file}"
   puts "Loading file into memory..."
   csv = CSV.read(input_file)
@@ -63,39 +65,35 @@ def process_data input_file, output_file
 
     month = get_month row[0]
     p10 = row[2]
-    p25 = row[3]
-    temperature = row[4]
 
     by_city_by_date[city] = {} unless by_city_by_date.key? city
     by_city_by_date[city][month] = [] unless by_city_by_date[city].key? month
-    by_city_by_date[city][month] << [p10, p25, temperature]
+    by_city_by_date[city][month] << p10.to_i
   end
 
-  puts "Start writing into #{output_file}"
+  puts "Start generating result json"
 
-  CSV.open(output_file, 'wb') do |new_csv|
-    new_csv << %w(city month p10 p2.5 temp)
+  result_json = {}
 
-    by_city_by_date.each do |current_city, city_data|
-      puts "Writing data for city #{current_city}..."
+  by_city_by_date.each do |city, city_data|
+    puts "Writing data for city #{city}..."
 
-      city_data.each do |date, date_data|
-        p1_arr = []
-        p2_arr = []
-        temp_arr = []
+    result_json[city] = {}
 
-        date_data.each do |instance|
-          p1_arr << instance[0].to_i
-          p2_arr << instance[1].to_i
-          temp_arr << instance[2].to_i
-        end
-
-        new_csv << [current_city, date, median(p1_arr), median(p2_arr), median(temp_arr)]
-      end
+    city_data.each do |month, month_data|
+      result_json[city][month] = median(month_data)
     end
   end
+
+  result_json
 end
 
-FILES_TO_PROCESS.each do |input_file, output_file|
-  process_data input_file, output_file
+total_result_json = {}
+
+FILES_TO_PROCESS.each do |processed_group|
+  total_result_json[processed_group[:year]] = process_data processed_group[:input_file]
+end
+
+File.open(OUTPUT_FILE, 'wb') do |f|
+  f.write JSON.pretty_generate(total_result_json)
 end
