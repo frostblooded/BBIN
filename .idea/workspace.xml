@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="f978157c-081d-4663-859e-fc51294a8624" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.custom.js.swp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/custom.css" beforeDir="false" afterPath="$PROJECT_DIR$/custom.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/custom.js" beforeDir="false" afterPath="$PROJECT_DIR$/custom.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/2015_2018_locality_polution_data.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/2015_2018_locality_polution_data.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/airtube-data-BG-2018.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/airtube-data-BG-2018.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/airtube-data-BG-2019.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/airtube-data-BG-2019.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/airtube_data_by_month_2018.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/airtube_data_by_month_2018.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/airtube_data_by_month_2018.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/airtube_data_by_month_2018.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/airtube_data_by_month_2019.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/airtube_data_by_month_2019.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/airtube_data_by_month_2019.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/airtube_data_by_month_2019.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/bulgaria_meteorological_data_ver2_0_15547_209408963.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/bulgaria_meteorological_data_ver2_0_15547_209408963.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_location_finder.rb" beforeDir="false" afterPath="$PROJECT_DIR$/data_location_finder.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/group_by_month_and_city.rb" beforeDir="false" afterPath="$PROJECT_DIR$/group_by_month_and_city.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/data/airtube_locality_data_2018.csv">
+          <provider selected="true" editor-type-id="LargeFileEditor" />
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectConfigurationFiles">
+    <option name="files">
+      <list>
+        <option value="$PROJECT_DIR$/.idea/BBIN.iml" />
+        <option value="$PROJECT_DIR$/.idea/misc.xml" />
+        <option value="$PROJECT_DIR$/.idea/modules.xml" />
+        <option value="$PROJECT_DIR$/.idea/vcs.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="width" value="1356" />
+    <option name="height" value="739" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="BBIN" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BBIN" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="BBIN" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BBIN" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="ignore_missing_gitignore" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.ruby.settings.RubyActiveModuleSdkConfigurable" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f978157c-081d-4663-859e-fc51294a8624" name="Default Changelist" comment="" />
+      <created>1575392819219</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1575392819219</updated>
+      <workItem from="1575392820664" duration="312000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="312000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="-1" width="1366" height="741" extended-state="6" />
+    <layout>
+      <window_info id="Favorites" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24963397" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" />
+      <window_info anchor="bottom" id="Version Control" />
+      <window_info anchor="bottom" id="Terminal" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" id="Database" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/data/airtube_locality_data_2018.csv">
+      <provider selected="true" editor-type-id="LargeFileEditor" />
+    </entry>
+  </component>
+</project>

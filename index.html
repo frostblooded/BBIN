@@ -3,20 +3,28 @@
     <head>
         <link rel="stylesheet" href="custom.css">
         <link rel="stylesheet" href="vendor/Chart.css">
+        <link rel="stylesheet" href="vendor/bootstrap.min.css">
         <script src="vendor/jquery-3.4.1.min.js"/></script>
         <script src="vendor/Chart.bundle.js"></script>
         <script src="custom.js"></script>
     </head>
     <body>
-      <div class="container">
-        <div id="city-selectors">
-          <input type="button" class="city-select" name="sofia" value="Sofiq"></input>
-          <input type="button" class="city-select" name="plovdiv" value="Plovdiv"></input>
-          <input type="button" class="city-select" name="vidin" value="Vidin"></input>
+      <div class="container canvas-container w-75">
+        <h2><span id="city-display">Sofia</span> in the year <span id="year-display">2018</span></h2>
+        <div class="row">
+          <div class="col-sm selectors" id="city-selectors">
+            <h4>Choose a city</h4>
+            <input type="button" class="btn btn-primary city-select" name="sofia" value="Sofia"></input>
+            <input type="button" class="btn btn-primary city-select" name="plovdiv" value="Plovdiv"></input>
+            <input type="button" class="btn btn-primary city-select" name="vidin" value="Vidin"></input>
+          </div>
+          <div class="col-sm selectors" id="year-selectors">
+            <h4>Choose an year</h4>
+            <input type="button" class="btn btn-primary year-select" name="2018" value="2018"></input>
+            <input type="button" class="btn btn-primary year-select" name="2019" value="2019"></input>
+          </div>
         </div>
-        <div id="year-selectors">
-          <input type="button" class="year-select" name="2018" value="2018"></input>
-          <input type="button" class="year-select" name="2019" value="2019"></input>
+        <div class="row canvas-container h-100">
         </div>
       </div>
     </body>

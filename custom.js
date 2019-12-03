@@ -121,7 +121,7 @@ $(document).ready(function() {
   }
 
   var $canvas = $(`<canvas id="chart"></canvas>`);
-  $('.container').append($canvas);
+  $('.canvas-container').append($canvas);
   var ctx = $canvas[0].getContext('2d');
   
   var chartData = {
@@ -159,11 +159,13 @@ $(document).ready(function() {
 
   $(".city-select").click((ev) => {
     selectedCity = ev.target.name;
+    $("#city-display").text(ev.target.value);
     updateChartData();
   });
 
   $(".year-select").click((ev) => {
     selectedYear = ev.target.name;
+    $("#year-display").text(ev.target.value);
     updateChartData();
   });
 });

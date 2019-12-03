@@ -22,10 +22,9 @@ def get_locality hash
   nil
 end
 
-HOST = "api.bigdatacloud.net"
-csv = CSV.read('data/airtube-data-BG-2019.csv')
+csv = CSV.read('data/airtube-data-BG-2018.csv')
 
-CSV.open('data/airtube_locality_data_2019.csv', 'wb') do |new_csv|
+CSV.open('data/airtube_locality_data_2018.csv', 'wb') do |new_csv|
   csv[1..].each do |row|
     unless row[1]
       byebug
@@ -35,9 +34,8 @@ CSV.open('data/airtube_locality_data_2019.csv', 'wb') do |new_csv|
     locality = get_locality row[1]
     next if locality.nil?
 
-    data = [row[0], locality, row[2], row[3]]
+    data = [row[0], locality, row[2], row[3], row[4]]
     new_csv << data
-    puts "[#{row[0]}, #{locality}, #{row[2]}, #{row[3]}]"
   end
 end
 

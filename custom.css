@@ -1,5 +1,21 @@
-.container {
-  width: 80%;
+.selectors {
+  display: inline-block;
+  margin: 10px 0;
+}
+
+canvas {
+  height: 450px;
+}
+
+.row {
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+}
+
+#city-select, #year-select {
   margin: 0 auto;
 }
 
