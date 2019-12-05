@@ -129,7 +129,6 @@ $(document).ready(function() {
   var chartData = {
       labels: getSelectedLabels(),
       datasets: [{
-          label: 'p10',
           data: getSelectedValues(),
           backgroundColor: chartBackgroundColors,
       }]
@@ -140,7 +139,17 @@ $(document).ready(function() {
           yAxes: [{
               ticks: {
                   beginAtZero: true
+              },
+              scaleLabel: {
+                  display: true,
+                  labelString: 'p10 particles'
               }
+          }],
+          xAxes: [{
+            scaleLabel: {
+              display: true,
+              labelString: 'month'
+            }
           }]
       }
   };
