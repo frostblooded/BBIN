@@ -123,6 +123,8 @@ $(document).ready(function() {
   var $canvas = $(`<canvas id="chart"></canvas>`);
   $('.canvas-container').append($canvas);
   var ctx = $canvas[0].getContext('2d');
+
+  Chart.defaults.global.legend.display = false;
   
   var chartData = {
       labels: getSelectedLabels(),

@@ -3,8 +3,8 @@
   margin: 10px 0;
 }
 
-canvas {
-  height: 450px;
+.container {
+  width: 60%!important;
 }
 
 .row {
